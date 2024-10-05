@@ -1,0 +1,4 @@
+# Ignore 根目录的文件，对src目录的文件生效
+./*
+scripts/*
+!src/*

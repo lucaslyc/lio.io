@@ -1,0 +1,20 @@
+ls:
+  .d.ts: kebab-case # 对所有 .d.ts 文件使用 kebab-case 形式
+
+  src:
+    .png: kebab-case | snakecase # 兼容原项目中 png 命名方式，增加 snake_case 规则
+    .dir: kebab-case
+    .js: kebab-case 
+    .tsx: pascalcase # PascalCase
+    .jsx: pascalcase # PascalCase
+    .vue: pascalcase # PascalCase
+
+  src/composables: # 组合式函数约定以 use 开头，camelCase 命名
+    .js: camelCase
+    .ts: camelCase
+
+ignore:
+  - .git # 忽略 .git 目录
+  - node_modules # 忽略 node_modules 目录
+
+# 规则配置详见 [ls-lint](https://ls-lint.org/1.x/configuration/the-rules.html#overview)
