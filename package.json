@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vue/babel-plugin-jsx": "^1.2.5",
@@ -21,6 +22,7 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vue/babel-preset-jsx": "^1.4.0",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.5.3",
     "vite": "^5.4.8",
     "vue-tsc": "^2.1.6"
